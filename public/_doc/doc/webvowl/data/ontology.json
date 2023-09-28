@@ -1,0 +1,116 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "title" : {
+      "undefined" : "ODIS Organisaties ontology"
+    },
+    "iri" : "https://data.q.odis.be/archief/",
+    "version" : "0.1",
+    "author" : [ "KADOC" ],
+    "description" : {
+      "undefined" : "ODIS Organisaties ontology"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2023-05-31 13:55:20 +0200",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "KADOC",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "ODIS Organisaties ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://data.q.odis.be/archief/Bewaarplaats",
+    "baseIri" : "https://data.q.odis.be/archief",
+    "instances" : 0,
+    "id" : "5"
+  }, {
+    "iri" : "https://data.q.odis.be/archief/Archief",
+    "baseIri" : "https://data.q.odis.be/archief",
+    "instances" : 0,
+    "id" : "1"
+  }, {
+    "iri" : "https://data.q.odis.be/archief/TaalEnSchrift",
+    "baseIri" : "https://data.q.odis.be/archief",
+    "instances" : 0,
+    "id" : "7"
+  }, {
+    "iri" : "https://data.q.odis.be/archief/Archiefcode",
+    "baseIri" : "https://data.q.odis.be/archief",
+    "instances" : 0,
+    "id" : "2"
+  }, {
+    "iri" : "https://data.q.odis.be/archief/OnlineToegang",
+    "baseIri" : "https://data.q.odis.be/archief",
+    "instances" : 0,
+    "id" : "4"
+  }, {
+    "iri" : "https://data.q.odis.be/archief/Archiefvormer",
+    "baseIri" : "https://data.q.odis.be/archief",
+    "instances" : 0,
+    "id" : "8"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://data.q.odis.be/archief/archiefcode",
+    "baseIri" : "https://data.q.odis.be/archief",
+    "range" : "2",
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://data.q.odis.be/archief/online_toegang",
+    "baseIri" : "https://data.q.odis.be/archief",
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  } ]
+}

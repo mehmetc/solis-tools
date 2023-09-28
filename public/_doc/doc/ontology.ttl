@@ -1,0 +1,1113 @@
+@prefix : <https://data.q.odis.be/archief/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://data.q.odis.be/archief/> .
+
+<https://data.q.odis.be/archief/> rdf:type owl:Ontology ;
+                                   <dc11:creator> "KADOC" ;
+                                   <dc11:date> "2023-05-31 13:55:20 +0200" ;
+                                   <dc11:description> "ODIS Organisaties ontology" ;
+                                   <dc11:title> "ODIS Organisaties ontology" ;
+                                   owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  dc11:creator
+<dc11:creator> rdf:type owl:AnnotationProperty .
+
+
+###  dc11:date
+<dc11:date> rdf:type owl:AnnotationProperty .
+
+
+###  dc11:description
+<dc11:description> rdf:type owl:AnnotationProperty .
+
+
+###  dc11:title
+<dc11:title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://data.q.odis.be/archief/archiefcode
+:archiefcode rdf:type owl:ObjectProperty ;
+             rdfs:domain :Archief ;
+             rdfs:range :Archiefcode ;
+             rdfs:comment "" ;
+             rdfs:label "archiefcode" .
+
+
+###  https://data.q.odis.be/archief/archiefvormer
+:archiefvormer rdf:type owl:ObjectProperty ;
+               rdfs:domain :Archief ;
+               rdfs:range :Archiefvormer ;
+               rdfs:comment "" ;
+               rdfs:label "archiefvormer" .
+
+
+###  https://data.q.odis.be/archief/auteurs
+:auteurs rdf:type owl:ObjectProperty ;
+         rdfs:domain :Archief ;
+         rdfs:range <odsc:Auteur> ;
+         rdfs:comment "" ;
+         rdfs:label "auteurs" .
+
+
+###  https://data.q.odis.be/archief/beschrijvingsniveau
+:beschrijvingsniveau rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Archief ;
+                     rdfs:range <odsc:Beschrijvingsniveau> ;
+                     rdfs:comment "" ;
+                     rdfs:label "beschrijvingsniveau" .
+
+
+###  https://data.q.odis.be/archief/bewaarplaats
+:bewaarplaats rdf:type owl:ObjectProperty ;
+              rdfs:domain :Bewaarplaats ;
+              rdfs:range <odbp:Bewaarplaats> ;
+              rdfs:comment "" ;
+              rdfs:label "bewaarplaats" .
+
+
+###  https://data.q.odis.be/archief/bewaarplaatsnaam
+:bewaarplaatsnaam rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Archiefcode ;
+                  rdfs:range <odbp:Bewaarplaats> ;
+                  rdfs:comment "" ;
+                  rdfs:label "bewaarplaatsnaam" .
+
+
+###  https://data.q.odis.be/archief/externe_catalogi
+:externe_catalogi rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Archief ;
+                  rdfs:range <odsc:ExterneCatalogus> ;
+                  rdfs:comment "" ;
+                  rdfs:label "externe_catalogi" .
+
+
+###  https://data.q.odis.be/archief/familie
+:familie rdf:type owl:ObjectProperty ;
+         rdfs:domain :Archiefvormer ;
+         rdfs:range <odsf:Familie> ;
+         rdfs:comment "" ;
+         rdfs:label "familie" .
+
+
+###  https://data.q.odis.be/archief/geografische_trefwoorden
+:geografische_trefwoorden rdf:type owl:ObjectProperty ;
+                          rdfs:domain :Archief ;
+                          rdfs:range <odsc:GeografischeTrefwoord> ;
+                          rdfs:comment "" ;
+                          rdfs:label "geografische_trefwoorden" .
+
+
+###  https://data.q.odis.be/archief/illustratie
+:illustratie rdf:type owl:ObjectProperty ;
+             rdfs:domain :Archief ;
+             rdfs:range <odsc:Illustratie> ;
+             rdfs:comment "" ;
+             rdfs:label "illustratie" .
+
+
+###  https://data.q.odis.be/archief/landcode
+:landcode rdf:type owl:ObjectProperty ;
+          rdfs:domain :Archiefcode ;
+          rdfs:range <odsc:Landcode> ;
+          rdfs:comment "" ;
+          rdfs:label "landcode" .
+
+
+###  https://data.q.odis.be/archief/online_bijlagen
+:online_bijlagen rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Archief ;
+                 rdfs:range <odsc:OnlineBijlage> ;
+                 rdfs:comment "" ;
+                 rdfs:label "online_bijlagen" .
+
+
+###  https://data.q.odis.be/archief/online_toegang
+:online_toegang rdf:type owl:ObjectProperty ;
+                rdfs:domain :Archief ;
+                rdfs:range :OnlineToegang ;
+                rdfs:comment "" ;
+                rdfs:label "online_toegang" .
+
+
+###  https://data.q.odis.be/archief/organisatie
+:organisatie rdf:type owl:ObjectProperty ;
+             rdfs:domain :Archiefvormer ;
+             rdfs:range <odso:Organisatie> ;
+             rdfs:comment "" ;
+             rdfs:label "organisatie" .
+
+
+###  https://data.q.odis.be/archief/parent
+:parent rdf:type owl:ObjectProperty ;
+        rdfs:domain :Archief ;
+        rdfs:range :Archief ;
+        rdfs:comment "" ;
+        rdfs:label "parent" .
+
+
+###  https://data.q.odis.be/archief/persoon
+:persoon rdf:type owl:ObjectProperty ;
+         rdfs:domain :Archiefvormer ;
+         rdfs:range <odsp:Persoon> ;
+         rdfs:comment "" ;
+         rdfs:label "persoon" .
+
+
+###  https://data.q.odis.be/archief/taal
+:taal rdf:type owl:ObjectProperty ;
+      rdfs:domain :TaalEnSchrift ;
+      rdfs:range <odsc:Taalcode> ;
+      rdfs:comment "" ;
+      rdfs:label "taal" .
+
+
+###  https://data.q.odis.be/archief/taal_en_schrift
+:taal_en_schrift rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Archief ;
+                 rdfs:range :TaalEnSchrift ;
+                 rdfs:comment "" ;
+                 rdfs:label "taal_en_schrift" .
+
+
+###  https://data.q.odis.be/archief/trefwoorden
+:trefwoorden rdf:type owl:ObjectProperty ;
+             rdfs:domain :Archief ;
+             rdfs:range <odsc:Trefwoord> ;
+             rdfs:comment "" ;
+             rdfs:label "trefwoorden" .
+
+
+###  https://data.q.odis.be/archief/verwante_archieven
+:verwante_archieven rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Archief ;
+                    rdfs:range <odsc:VerwanteArchief> ;
+                    rdfs:comment "" ;
+                    rdfs:label "verwante_archieven" .
+
+
+###  https://data.q.odis.be/archief/verwante_families
+:verwante_families rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Archief ;
+                   rdfs:range <odsc:VerwanteFamilie> ;
+                   rdfs:comment "" ;
+                   rdfs:label "verwante_families" .
+
+
+###  https://data.q.odis.be/archief/verwante_gebeurtenissen
+:verwante_gebeurtenissen rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Archief ;
+                         rdfs:range <odsc:VerwanteGebeurtenis> ;
+                         rdfs:comment "" ;
+                         rdfs:label "verwante_gebeurtenissen" .
+
+
+###  https://data.q.odis.be/archief/verwante_gebouwen
+:verwante_gebouwen rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Archief ;
+                   rdfs:range <odsc:VerwanteGebouw> ;
+                   rdfs:comment "" ;
+                   rdfs:label "verwante_gebouwen" .
+
+
+###  https://data.q.odis.be/archief/verwante_organisaties
+:verwante_organisaties rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Archief ;
+                       rdfs:range <odsc:VerwanteOrganisatie> ;
+                       rdfs:comment "" ;
+                       rdfs:label "verwante_organisaties" .
+
+
+###  https://data.q.odis.be/archief/verwante_personen
+:verwante_personen rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Archief ;
+                   rdfs:range <odsc:VerwantePersoon> ;
+                   rdfs:comment "" ;
+                   rdfs:label "verwante_personen" .
+
+
+###  https://data.q.odis.be/archief/verwante_publicaties
+:verwante_publicaties rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Archief ;
+                      rdfs:range <odsc:VerwantePublicatie> ;
+                      rdfs:comment "" ;
+                      rdfs:label "verwante_publicaties" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://data.q.odis.be/archief/aanvullingen
+:aanvullingen rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Archief ;
+              rdfs:range rdf:langString ;
+              rdfs:comment "" ;
+              rdfs:label "aanvullingen" .
+
+
+###  https://data.q.odis.be/archief/beginjaar
+:beginjaar rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Bewaarplaats ;
+           rdfs:range xsd:date ;
+           rdfs:comment "" ;
+           rdfs:label "beginjaar" .
+
+
+###  https://data.q.odis.be/archief/bereik_en_inhoud
+:bereik_en_inhoud rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Archief ;
+                  rdfs:range rdf:langString ;
+                  rdfs:comment "" ;
+                  rdfs:label "bereik_en_inhoud" .
+
+
+###  https://data.q.odis.be/archief/beschrijving
+:beschrijving rdf:type owl:DatatypeProperty ;
+              rdfs:domain :OnlineToegang ;
+              rdfs:range xsd:string ;
+              rdfs:comment "" ;
+              rdfs:label "beschrijving" .
+
+
+###  https://data.q.odis.be/archief/beschrijvingsbeheer
+:beschrijvingsbeheer rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Archief ;
+                     rdfs:range rdf:langString ;
+                     rdfs:comment "" ;
+                     rdfs:label "beschrijvingsbeheer" .
+
+
+###  https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën
+:bestaan_en_bewaarplaats_kopieën rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :Archief ;
+                                 rdfs:range rdf:langString ;
+                                 rdfs:comment "" ;
+                                 rdfs:label "bestaan_en_bewaarplaats_kopieën" .
+
+
+###  https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen
+:bestaan_en_bewaarplaats_originelen rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain :Archief ;
+                                    rdfs:range rdf:langString ;
+                                    rdfs:comment "" ;
+                                    rdfs:label "bestaan_en_bewaarplaats_originelen" .
+
+
+###  https://data.q.odis.be/archief/bezit
+:bezit rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Bewaarplaats ;
+       rdfs:range rdf:langString ;
+       rdfs:comment "" ;
+       rdfs:label "bezit" .
+
+
+###  https://data.q.odis.be/archief/bronnen
+:bronnen rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Archief ;
+         rdfs:range xsd:string ;
+         rdfs:comment "" ;
+         rdfs:label "bronnen" .
+
+
+###  https://data.q.odis.be/archief/controle
+:controle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Archief ;
+          rdfs:range xsd:anyURI ;
+          rdfs:comment "" ;
+          rdfs:label "controle" .
+
+
+###  https://data.q.odis.be/archief/datering
+:datering rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Archief ,
+                      :TaalEnSchrift ;
+          rdfs:range xsd:date ;
+          rdfs:comment "" ;
+          rdfs:label "datering" .
+
+
+###  https://data.q.odis.be/archief/datering_systematisch
+:datering_systematisch rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Archief ;
+                       rdfs:range xsd:date ;
+                       rdfs:comment "" ;
+                       rdfs:label "datering_systematisch" .
+
+
+###  https://data.q.odis.be/archief/eindjaar
+:eindjaar rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Bewaarplaats ;
+          rdfs:range xsd:date ;
+          rdfs:comment "" ;
+          rdfs:label "eindjaar" .
+
+
+###  https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten
+:fysieke_kenmerken_en_technische_vereisten rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :Archief ;
+                                           rdfs:range rdf:langString ;
+                                           rdfs:comment "" ;
+                                           rdfs:label "fysieke_kenmerken_en_technische_vereisten" .
+
+
+###  https://data.q.odis.be/archief/fysieke_kentrekken
+:fysieke_kentrekken rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Bewaarplaats ;
+                    rdfs:range rdf:langString ;
+                    rdfs:comment "" ;
+                    rdfs:label "fysieke_kentrekken" .
+
+
+###  https://data.q.odis.be/archief/geschiedenis_van_het_archief
+:geschiedenis_van_het_archief rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Archief ;
+                              rdfs:range rdf:langString ;
+                              rdfs:comment "" ;
+                              rdfs:label "geschiedenis_van_het_archief" .
+
+
+###  https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen
+:informatie_over_kopieën_of_originelen rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Bewaarplaats ;
+                                       rdfs:range rdf:langString ;
+                                       rdfs:comment "" ;
+                                       rdfs:label "informatie_over_kopieën_of_originelen" .
+
+
+###  https://data.q.odis.be/archief/intermediair
+:intermediair rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Archief ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "" ;
+              rdfs:label "intermediair" .
+
+
+###  https://data.q.odis.be/archief/lokale_referentie
+:lokale_referentie rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Archiefcode ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "" ;
+                   rdfs:label "lokale_referentie" .
+
+
+###  https://data.q.odis.be/archief/odiscode
+:odiscode rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Archief ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "" ;
+          rdfs:label "odiscode" .
+
+
+###  https://data.q.odis.be/archief/omvang_en_medium
+:omvang_en_medium rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Archief ;
+                  rdfs:range rdf:langString ;
+                  rdfs:comment "" ;
+                  rdfs:label "omvang_en_medium" .
+
+
+###  https://data.q.odis.be/archief/opmerking
+:opmerking rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Bewaarplaats ,
+                       :OnlineToegang ,
+                       :TaalEnSchrift ;
+           rdfs:range xsd:string ;
+           rdfs:comment "" ;
+           rdfs:label "opmerking" .
+
+
+###  https://data.q.odis.be/archief/opmerkingen
+:opmerkingen rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Archief ;
+             rdfs:range rdf:langString ;
+             rdfs:comment "" ;
+             rdfs:label "opmerkingen" .
+
+
+###  https://data.q.odis.be/archief/ordening
+:ordening rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Archief ;
+          rdfs:range rdf:langString ;
+          rdfs:comment "" ;
+          rdfs:label "ordening" .
+
+
+###  https://data.q.odis.be/archief/raadpleegbaarheid
+:raadpleegbaarheid rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Bewaarplaats ;
+                   rdfs:range rdf:langString ;
+                   rdfs:comment "" ;
+                   rdfs:label "raadpleegbaarheid" .
+
+
+###  https://data.q.odis.be/archief/selectie
+:selectie rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Archief ;
+          rdfs:range rdf:langString ;
+          rdfs:comment "" ;
+          rdfs:label "selectie" .
+
+
+###  https://data.q.odis.be/archief/titel
+:titel rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Archief ;
+       rdfs:range xsd:string ;
+       rdfs:comment "" ;
+       rdfs:label "titel" .
+
+
+###  https://data.q.odis.be/archief/toegang
+:toegang rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Archief ;
+         rdfs:range rdf:langString ;
+         rdfs:comment "" ;
+         rdfs:label "toegang" .
+
+
+###  https://data.q.odis.be/archief/url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :OnlineToegang ;
+     rdfs:range xsd:string ;
+     rdfs:comment "" ;
+     rdfs:label "url" .
+
+
+###  https://data.q.odis.be/archief/verwerving
+:verwerving rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Archief ;
+            rdfs:range rdf:langString ;
+            rdfs:comment "" ;
+            rdfs:label "verwerving" .
+
+
+###  https://data.q.odis.be/archief/verwijzing_steekkaart
+:verwijzing_steekkaart rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Archief ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "" ;
+                       rdfs:label "verwijzing_steekkaart" .
+
+
+###  https://data.q.odis.be/archief/voorwaarden_voor_raadpleging
+:voorwaarden_voor_raadpleging rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Archief ;
+                              rdfs:range rdf:langString ;
+                              rdfs:comment "" ;
+                              rdfs:label "voorwaarden_voor_raadpleging" .
+
+
+###  https://data.q.odis.be/archief/voorwaarden_voor_reproductie
+:voorwaarden_voor_reproductie rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Archief ;
+                              rdfs:range rdf:langString ;
+                              rdfs:comment "" ;
+                              rdfs:label "voorwaarden_voor_reproductie" .
+
+
+###  https://data.q.odis.be/archief/werknotities
+:werknotities rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Archief ;
+              rdfs:range rdf:langString ;
+              rdfs:comment "" ;
+              rdfs:label "werknotities" .
+
+
+###  https://data.q.odis.be/archief/werknotities_invoerdersgroep
+:werknotities_invoerdersgroep rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Archief ;
+                              rdfs:range rdf:langString ;
+                              rdfs:comment "" ;
+                              rdfs:label "werknotities_invoerdersgroep" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://data.q.odis.be/archief/Archief
+:Archief rdf:type owl:Class ;
+         rdfs:subClassOf <odsc:Entiteit> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :archiefcode ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :archiefvormer ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :auteurs ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :beschrijvingsniveau ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :externe_catalogi ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :geografische_trefwoorden ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :illustratie ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :online_bijlagen ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :online_toegang ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :parent ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :taal_en_schrift ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :trefwoorden ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwante_archieven ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwante_families ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwante_gebeurtenissen ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwante_gebouwen ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwante_organisaties ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwante_personen ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwante_publicaties ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :archiefcode ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :archiefvormer ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :beschrijvingsniveau ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :parent ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :aanvullingen ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bereik_en_inhoud ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :beschrijvingsbeheer ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bestaan_en_bewaarplaats_kopieën ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bestaan_en_bewaarplaats_originelen ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bronnen ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :controle ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :datering ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :datering_systematisch ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :fysieke_kenmerken_en_technische_vereisten ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :geschiedenis_van_het_archief ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :intermediair ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :odiscode ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :omvang_en_medium ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :opmerkingen ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :ordening ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :selectie ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :titel ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :toegang ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwerving ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwijzing_steekkaart ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :voorwaarden_voor_raadpleging ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :voorwaarden_voor_reproductie ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :werknotities ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :werknotities_invoerdersgroep ;
+                           owl:minCardinality "0"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :aanvullingen ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bereik_en_inhoud ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :beschrijvingsbeheer ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bestaan_en_bewaarplaats_kopieën ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bestaan_en_bewaarplaats_originelen ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bronnen ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :datering ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :fysieke_kenmerken_en_technische_vereisten ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :geschiedenis_van_het_archief ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :intermediair ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :odiscode ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :omvang_en_medium ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :ordening ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :selectie ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :titel ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :toegang ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwerving ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :verwijzing_steekkaart ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :voorwaarden_voor_raadpleging ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :voorwaarden_voor_reproductie ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :werknotities ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :werknotities_invoerdersgroep ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:comment "" ;
+         rdfs:label "Archief" .
+
+
+###  https://data.q.odis.be/archief/Archiefcode
+:Archiefcode rdf:type owl:Class ;
+             rdfs:subClassOf <odsc:Entiteit> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :bewaarplaatsnaam ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :landcode ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :bewaarplaatsnaam ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :landcode ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :lokale_referentie ;
+                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :lokale_referentie ;
+                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+             rdfs:comment "" ;
+             rdfs:label "Archiefcode" .
+
+
+###  https://data.q.odis.be/archief/Archiefvormer
+:Archiefvormer rdf:type owl:Class ;
+               rdfs:subClassOf <odsc:Entiteit> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :familie ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :organisatie ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :persoon ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :familie ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :organisatie ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :persoon ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:comment "" ;
+               rdfs:label "Archiefvormer" .
+
+
+###  https://data.q.odis.be/archief/Bewaarplaats
+:Bewaarplaats rdf:type owl:Class ;
+              rdfs:subClassOf <odsc:Entiteit> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bewaarplaats ;
+                                owl:minCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bewaarplaats ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :beginjaar ;
+                                owl:minCardinality "0"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bezit ;
+                                owl:minCardinality "0"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :eindjaar ;
+                                owl:minCardinality "0"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :fysieke_kentrekken ;
+                                owl:minCardinality "0"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :informatie_over_kopieën_of_originelen ;
+                                owl:minCardinality "0"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :opmerking ;
+                                owl:minCardinality "0"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :raadpleegbaarheid ;
+                                owl:minCardinality "0"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :beginjaar ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :bezit ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :eindjaar ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :fysieke_kentrekken ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :informatie_over_kopieën_of_originelen ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :opmerking ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :raadpleegbaarheid ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              rdfs:comment "" ;
+              rdfs:label "Bewaarplaats" .
+
+
+###  https://data.q.odis.be/archief/OnlineToegang
+:OnlineToegang rdf:type owl:Class ;
+               rdfs:subClassOf <odsc:Entiteit> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :beschrijving ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :opmerking ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :url ;
+                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :beschrijving ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :opmerking ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :url ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:comment "" ;
+               rdfs:label "OnlineToegang" .
+
+
+###  https://data.q.odis.be/archief/TaalEnSchrift
+:TaalEnSchrift rdf:type owl:Class ;
+               rdfs:subClassOf <odsc:Entiteit> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :taal ;
+                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :taal ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :datering ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :opmerking ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :datering ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :opmerking ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:comment "" ;
+               rdfs:label "TaalEnSchrift" .
+
+
+###  odbp:Bewaarplaats
+<odbp:Bewaarplaats> rdf:type owl:Class .
+
+
+###  odsc:Auteur
+<odsc:Auteur> rdf:type owl:Class .
+
+
+###  odsc:Beschrijvingsniveau
+<odsc:Beschrijvingsniveau> rdf:type owl:Class .
+
+
+###  odsc:Entiteit
+<odsc:Entiteit> rdf:type owl:Class .
+
+
+###  odsc:ExterneCatalogus
+<odsc:ExterneCatalogus> rdf:type owl:Class .
+
+
+###  odsc:GeografischeTrefwoord
+<odsc:GeografischeTrefwoord> rdf:type owl:Class .
+
+
+###  odsc:Illustratie
+<odsc:Illustratie> rdf:type owl:Class .
+
+
+###  odsc:Landcode
+<odsc:Landcode> rdf:type owl:Class .
+
+
+###  odsc:OnlineBijlage
+<odsc:OnlineBijlage> rdf:type owl:Class .
+
+
+###  odsc:Taalcode
+<odsc:Taalcode> rdf:type owl:Class .
+
+
+###  odsc:Trefwoord
+<odsc:Trefwoord> rdf:type owl:Class .
+
+
+###  odsc:VerwanteArchief
+<odsc:VerwanteArchief> rdf:type owl:Class .
+
+
+###  odsc:VerwanteFamilie
+<odsc:VerwanteFamilie> rdf:type owl:Class .
+
+
+###  odsc:VerwanteGebeurtenis
+<odsc:VerwanteGebeurtenis> rdf:type owl:Class .
+
+
+###  odsc:VerwanteGebouw
+<odsc:VerwanteGebouw> rdf:type owl:Class .
+
+
+###  odsc:VerwanteOrganisatie
+<odsc:VerwanteOrganisatie> rdf:type owl:Class .
+
+
+###  odsc:VerwantePersoon
+<odsc:VerwantePersoon> rdf:type owl:Class .
+
+
+###  odsc:VerwantePublicatie
+<odsc:VerwantePublicatie> rdf:type owl:Class .
+
+
+###  odsf:Familie
+<odsf:Familie> rdf:type owl:Class .
+
+
+###  odso:Organisatie
+<odso:Organisatie> rdf:type owl:Class .
+
+
+###  odsp:Persoon
+<odsp:Persoon> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

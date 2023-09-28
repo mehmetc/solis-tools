@@ -1,0 +1,1036 @@
+<https://data.q.odis.be/archief/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.q.odis.be/archief/> <dc11:creator> "KADOC" .
+<https://data.q.odis.be/archief/> <dc11:date> "2023-05-31 13:55:20 +0200" .
+<https://data.q.odis.be/archief/> <dc11:description> "ODIS Organisaties ontology" .
+<https://data.q.odis.be/archief/> <dc11:title> "ODIS Organisaties ontology" .
+<https://data.q.odis.be/archief/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# dc11:creator
+<dc11:creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# dc11:date
+<dc11:date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# dc11:description
+<dc11:description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# dc11:title
+<dc11:title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://data.q.odis.be/archief/archiefcode
+<https://data.q.odis.be/archief/archiefcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/archiefcode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/archiefcode> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.q.odis.be/archief/Archiefcode> .
+<https://data.q.odis.be/archief/archiefcode> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/archiefcode> <http://www.w3.org/2000/01/rdf-schema#label> "archiefcode" .
+# 
+# https://data.q.odis.be/archief/archiefvormer
+<https://data.q.odis.be/archief/archiefvormer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/archiefvormer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/archiefvormer> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.q.odis.be/archief/Archiefvormer> .
+<https://data.q.odis.be/archief/archiefvormer> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/archiefvormer> <http://www.w3.org/2000/01/rdf-schema#label> "archiefvormer" .
+# 
+# https://data.q.odis.be/archief/auteurs
+<https://data.q.odis.be/archief/auteurs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/auteurs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/auteurs> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:Auteur> .
+<odsc:Auteur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/auteurs> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/auteurs> <http://www.w3.org/2000/01/rdf-schema#label> "auteurs" .
+# 
+# https://data.q.odis.be/archief/beschrijvingsniveau
+<https://data.q.odis.be/archief/beschrijvingsniveau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/beschrijvingsniveau> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/beschrijvingsniveau> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:Beschrijvingsniveau> .
+<odsc:Beschrijvingsniveau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/beschrijvingsniveau> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/beschrijvingsniveau> <http://www.w3.org/2000/01/rdf-schema#label> "beschrijvingsniveau" .
+# 
+# https://data.q.odis.be/archief/bewaarplaats
+<https://data.q.odis.be/archief/bewaarplaats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Bewaarplaats> .
+<https://data.q.odis.be/archief/bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#range> <odbp:Bewaarplaats> .
+<odbp:Bewaarplaats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#label> "bewaarplaats" .
+# 
+# https://data.q.odis.be/archief/bewaarplaatsnaam
+<https://data.q.odis.be/archief/bewaarplaatsnaam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/bewaarplaatsnaam> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archiefcode> .
+<https://data.q.odis.be/archief/bewaarplaatsnaam> <http://www.w3.org/2000/01/rdf-schema#range> <odbp:Bewaarplaats> .
+<https://data.q.odis.be/archief/bewaarplaatsnaam> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/bewaarplaatsnaam> <http://www.w3.org/2000/01/rdf-schema#label> "bewaarplaatsnaam" .
+# 
+# https://data.q.odis.be/archief/externe_catalogi
+<https://data.q.odis.be/archief/externe_catalogi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/externe_catalogi> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/externe_catalogi> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:ExterneCatalogus> .
+<odsc:ExterneCatalogus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/externe_catalogi> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/externe_catalogi> <http://www.w3.org/2000/01/rdf-schema#label> "externe_catalogi" .
+# 
+# https://data.q.odis.be/archief/familie
+<https://data.q.odis.be/archief/familie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/familie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archiefvormer> .
+<https://data.q.odis.be/archief/familie> <http://www.w3.org/2000/01/rdf-schema#range> <odsf:Familie> .
+<odsf:Familie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/familie> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/familie> <http://www.w3.org/2000/01/rdf-schema#label> "familie" .
+# 
+# https://data.q.odis.be/archief/geografische_trefwoorden
+<https://data.q.odis.be/archief/geografische_trefwoorden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/geografische_trefwoorden> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/geografische_trefwoorden> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:GeografischeTrefwoord> .
+<odsc:GeografischeTrefwoord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/geografische_trefwoorden> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/geografische_trefwoorden> <http://www.w3.org/2000/01/rdf-schema#label> "geografische_trefwoorden" .
+# 
+# https://data.q.odis.be/archief/illustratie
+<https://data.q.odis.be/archief/illustratie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/illustratie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/illustratie> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:Illustratie> .
+<odsc:Illustratie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/illustratie> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/illustratie> <http://www.w3.org/2000/01/rdf-schema#label> "illustratie" .
+# 
+# https://data.q.odis.be/archief/landcode
+<https://data.q.odis.be/archief/landcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/landcode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archiefcode> .
+<https://data.q.odis.be/archief/landcode> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:Landcode> .
+<odsc:Landcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/landcode> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/landcode> <http://www.w3.org/2000/01/rdf-schema#label> "landcode" .
+# 
+# https://data.q.odis.be/archief/online_bijlagen
+<https://data.q.odis.be/archief/online_bijlagen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/online_bijlagen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/online_bijlagen> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:OnlineBijlage> .
+<odsc:OnlineBijlage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/online_bijlagen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/online_bijlagen> <http://www.w3.org/2000/01/rdf-schema#label> "online_bijlagen" .
+# 
+# https://data.q.odis.be/archief/online_toegang
+<https://data.q.odis.be/archief/online_toegang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/online_toegang> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/online_toegang> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.q.odis.be/archief/OnlineToegang> .
+<https://data.q.odis.be/archief/online_toegang> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/online_toegang> <http://www.w3.org/2000/01/rdf-schema#label> "online_toegang" .
+# 
+# https://data.q.odis.be/archief/organisatie
+<https://data.q.odis.be/archief/organisatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/organisatie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archiefvormer> .
+<https://data.q.odis.be/archief/organisatie> <http://www.w3.org/2000/01/rdf-schema#range> <odso:Organisatie> .
+<odso:Organisatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/organisatie> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/organisatie> <http://www.w3.org/2000/01/rdf-schema#label> "organisatie" .
+# 
+# https://data.q.odis.be/archief/parent
+<https://data.q.odis.be/archief/parent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/parent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/parent> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/parent> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/parent> <http://www.w3.org/2000/01/rdf-schema#label> "parent" .
+# 
+# https://data.q.odis.be/archief/persoon
+<https://data.q.odis.be/archief/persoon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/persoon> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archiefvormer> .
+<https://data.q.odis.be/archief/persoon> <http://www.w3.org/2000/01/rdf-schema#range> <odsp:Persoon> .
+<odsp:Persoon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/persoon> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/persoon> <http://www.w3.org/2000/01/rdf-schema#label> "persoon" .
+# 
+# https://data.q.odis.be/archief/taal
+<https://data.q.odis.be/archief/taal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/taal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/TaalEnSchrift> .
+<https://data.q.odis.be/archief/taal> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:Taalcode> .
+<odsc:Taalcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/taal> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/taal> <http://www.w3.org/2000/01/rdf-schema#label> "taal" .
+# 
+# https://data.q.odis.be/archief/taal_en_schrift
+<https://data.q.odis.be/archief/taal_en_schrift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/taal_en_schrift> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/taal_en_schrift> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.q.odis.be/archief/TaalEnSchrift> .
+<https://data.q.odis.be/archief/taal_en_schrift> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/taal_en_schrift> <http://www.w3.org/2000/01/rdf-schema#label> "taal_en_schrift" .
+# 
+# https://data.q.odis.be/archief/trefwoorden
+<https://data.q.odis.be/archief/trefwoorden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/trefwoorden> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/trefwoorden> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:Trefwoord> .
+<odsc:Trefwoord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/trefwoorden> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/trefwoorden> <http://www.w3.org/2000/01/rdf-schema#label> "trefwoorden" .
+# 
+# https://data.q.odis.be/archief/verwante_archieven
+<https://data.q.odis.be/archief/verwante_archieven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/verwante_archieven> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwante_archieven> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:VerwanteArchief> .
+<odsc:VerwanteArchief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/verwante_archieven> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwante_archieven> <http://www.w3.org/2000/01/rdf-schema#label> "verwante_archieven" .
+# 
+# https://data.q.odis.be/archief/verwante_families
+<https://data.q.odis.be/archief/verwante_families> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/verwante_families> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwante_families> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:VerwanteFamilie> .
+<odsc:VerwanteFamilie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/verwante_families> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwante_families> <http://www.w3.org/2000/01/rdf-schema#label> "verwante_families" .
+# 
+# https://data.q.odis.be/archief/verwante_gebeurtenissen
+<https://data.q.odis.be/archief/verwante_gebeurtenissen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/verwante_gebeurtenissen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwante_gebeurtenissen> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:VerwanteGebeurtenis> .
+<odsc:VerwanteGebeurtenis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/verwante_gebeurtenissen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwante_gebeurtenissen> <http://www.w3.org/2000/01/rdf-schema#label> "verwante_gebeurtenissen" .
+# 
+# https://data.q.odis.be/archief/verwante_gebouwen
+<https://data.q.odis.be/archief/verwante_gebouwen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/verwante_gebouwen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwante_gebouwen> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:VerwanteGebouw> .
+<odsc:VerwanteGebouw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/verwante_gebouwen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwante_gebouwen> <http://www.w3.org/2000/01/rdf-schema#label> "verwante_gebouwen" .
+# 
+# https://data.q.odis.be/archief/verwante_organisaties
+<https://data.q.odis.be/archief/verwante_organisaties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/verwante_organisaties> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwante_organisaties> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:VerwanteOrganisatie> .
+<odsc:VerwanteOrganisatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/verwante_organisaties> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwante_organisaties> <http://www.w3.org/2000/01/rdf-schema#label> "verwante_organisaties" .
+# 
+# https://data.q.odis.be/archief/verwante_personen
+<https://data.q.odis.be/archief/verwante_personen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/verwante_personen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwante_personen> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:VerwantePersoon> .
+<odsc:VerwantePersoon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/verwante_personen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwante_personen> <http://www.w3.org/2000/01/rdf-schema#label> "verwante_personen" .
+# 
+# https://data.q.odis.be/archief/verwante_publicaties
+<https://data.q.odis.be/archief/verwante_publicaties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.q.odis.be/archief/verwante_publicaties> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwante_publicaties> <http://www.w3.org/2000/01/rdf-schema#range> <odsc:VerwantePublicatie> .
+<odsc:VerwantePublicatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/verwante_publicaties> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwante_publicaties> <http://www.w3.org/2000/01/rdf-schema#label> "verwante_publicaties" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://data.q.odis.be/archief/aanvullingen
+<https://data.q.odis.be/archief/aanvullingen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/aanvullingen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/aanvullingen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/aanvullingen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/aanvullingen> <http://www.w3.org/2000/01/rdf-schema#label> "aanvullingen" .
+# 
+# https://data.q.odis.be/archief/beginjaar
+<https://data.q.odis.be/archief/beginjaar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/beginjaar> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Bewaarplaats> .
+<https://data.q.odis.be/archief/beginjaar> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://data.q.odis.be/archief/beginjaar> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/beginjaar> <http://www.w3.org/2000/01/rdf-schema#label> "beginjaar" .
+# 
+# https://data.q.odis.be/archief/bereik_en_inhoud
+<https://data.q.odis.be/archief/bereik_en_inhoud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/bereik_en_inhoud> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/bereik_en_inhoud> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/bereik_en_inhoud> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/bereik_en_inhoud> <http://www.w3.org/2000/01/rdf-schema#label> "bereik_en_inhoud" .
+# 
+# https://data.q.odis.be/archief/beschrijving
+<https://data.q.odis.be/archief/beschrijving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/beschrijving> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/OnlineToegang> .
+<https://data.q.odis.be/archief/beschrijving> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.q.odis.be/archief/beschrijving> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/beschrijving> <http://www.w3.org/2000/01/rdf-schema#label> "beschrijving" .
+# 
+# https://data.q.odis.be/archief/beschrijvingsbeheer
+<https://data.q.odis.be/archief/beschrijvingsbeheer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/beschrijvingsbeheer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/beschrijvingsbeheer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/beschrijvingsbeheer> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/beschrijvingsbeheer> <http://www.w3.org/2000/01/rdf-schema#label> "beschrijvingsbeheer" .
+# 
+# https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën> <http://www.w3.org/2000/01/rdf-schema#label> "bestaan_en_bewaarplaats_kopieën" .
+# 
+# https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen> <http://www.w3.org/2000/01/rdf-schema#label> "bestaan_en_bewaarplaats_originelen" .
+# 
+# https://data.q.odis.be/archief/bezit
+<https://data.q.odis.be/archief/bezit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/bezit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Bewaarplaats> .
+<https://data.q.odis.be/archief/bezit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/bezit> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/bezit> <http://www.w3.org/2000/01/rdf-schema#label> "bezit" .
+# 
+# https://data.q.odis.be/archief/bronnen
+<https://data.q.odis.be/archief/bronnen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/bronnen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/bronnen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.q.odis.be/archief/bronnen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/bronnen> <http://www.w3.org/2000/01/rdf-schema#label> "bronnen" .
+# 
+# https://data.q.odis.be/archief/controle
+<https://data.q.odis.be/archief/controle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/controle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/controle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://data.q.odis.be/archief/controle> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/controle> <http://www.w3.org/2000/01/rdf-schema#label> "controle" .
+# 
+# https://data.q.odis.be/archief/datering
+<https://data.q.odis.be/archief/datering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/datering> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/datering> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/TaalEnSchrift> .
+<https://data.q.odis.be/archief/datering> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://data.q.odis.be/archief/datering> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/datering> <http://www.w3.org/2000/01/rdf-schema#label> "datering" .
+# 
+# https://data.q.odis.be/archief/datering_systematisch
+<https://data.q.odis.be/archief/datering_systematisch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/datering_systematisch> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/datering_systematisch> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://data.q.odis.be/archief/datering_systematisch> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/datering_systematisch> <http://www.w3.org/2000/01/rdf-schema#label> "datering_systematisch" .
+# 
+# https://data.q.odis.be/archief/eindjaar
+<https://data.q.odis.be/archief/eindjaar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/eindjaar> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Bewaarplaats> .
+<https://data.q.odis.be/archief/eindjaar> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://data.q.odis.be/archief/eindjaar> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/eindjaar> <http://www.w3.org/2000/01/rdf-schema#label> "eindjaar" .
+# 
+# https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten
+<https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten> <http://www.w3.org/2000/01/rdf-schema#label> "fysieke_kenmerken_en_technische_vereisten" .
+# 
+# https://data.q.odis.be/archief/fysieke_kentrekken
+<https://data.q.odis.be/archief/fysieke_kentrekken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/fysieke_kentrekken> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Bewaarplaats> .
+<https://data.q.odis.be/archief/fysieke_kentrekken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/fysieke_kentrekken> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/fysieke_kentrekken> <http://www.w3.org/2000/01/rdf-schema#label> "fysieke_kentrekken" .
+# 
+# https://data.q.odis.be/archief/geschiedenis_van_het_archief
+<https://data.q.odis.be/archief/geschiedenis_van_het_archief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/geschiedenis_van_het_archief> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/geschiedenis_van_het_archief> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/geschiedenis_van_het_archief> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/geschiedenis_van_het_archief> <http://www.w3.org/2000/01/rdf-schema#label> "geschiedenis_van_het_archief" .
+# 
+# https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen
+<https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Bewaarplaats> .
+<https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen> <http://www.w3.org/2000/01/rdf-schema#label> "informatie_over_kopieën_of_originelen" .
+# 
+# https://data.q.odis.be/archief/intermediair
+<https://data.q.odis.be/archief/intermediair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/intermediair> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/intermediair> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://data.q.odis.be/archief/intermediair> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/intermediair> <http://www.w3.org/2000/01/rdf-schema#label> "intermediair" .
+# 
+# https://data.q.odis.be/archief/lokale_referentie
+<https://data.q.odis.be/archief/lokale_referentie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/lokale_referentie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archiefcode> .
+<https://data.q.odis.be/archief/lokale_referentie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.q.odis.be/archief/lokale_referentie> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/lokale_referentie> <http://www.w3.org/2000/01/rdf-schema#label> "lokale_referentie" .
+# 
+# https://data.q.odis.be/archief/odiscode
+<https://data.q.odis.be/archief/odiscode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/odiscode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/odiscode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://data.q.odis.be/archief/odiscode> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/odiscode> <http://www.w3.org/2000/01/rdf-schema#label> "odiscode" .
+# 
+# https://data.q.odis.be/archief/omvang_en_medium
+<https://data.q.odis.be/archief/omvang_en_medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/omvang_en_medium> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/omvang_en_medium> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/omvang_en_medium> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/omvang_en_medium> <http://www.w3.org/2000/01/rdf-schema#label> "omvang_en_medium" .
+# 
+# https://data.q.odis.be/archief/opmerking
+<https://data.q.odis.be/archief/opmerking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/opmerking> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Bewaarplaats> .
+<https://data.q.odis.be/archief/opmerking> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/OnlineToegang> .
+<https://data.q.odis.be/archief/opmerking> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/TaalEnSchrift> .
+<https://data.q.odis.be/archief/opmerking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.q.odis.be/archief/opmerking> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/opmerking> <http://www.w3.org/2000/01/rdf-schema#label> "opmerking" .
+# 
+# https://data.q.odis.be/archief/opmerkingen
+<https://data.q.odis.be/archief/opmerkingen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/opmerkingen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/opmerkingen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/opmerkingen> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/opmerkingen> <http://www.w3.org/2000/01/rdf-schema#label> "opmerkingen" .
+# 
+# https://data.q.odis.be/archief/ordening
+<https://data.q.odis.be/archief/ordening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/ordening> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/ordening> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/ordening> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/ordening> <http://www.w3.org/2000/01/rdf-schema#label> "ordening" .
+# 
+# https://data.q.odis.be/archief/raadpleegbaarheid
+<https://data.q.odis.be/archief/raadpleegbaarheid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/raadpleegbaarheid> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Bewaarplaats> .
+<https://data.q.odis.be/archief/raadpleegbaarheid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/raadpleegbaarheid> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/raadpleegbaarheid> <http://www.w3.org/2000/01/rdf-schema#label> "raadpleegbaarheid" .
+# 
+# https://data.q.odis.be/archief/selectie
+<https://data.q.odis.be/archief/selectie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/selectie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/selectie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/selectie> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/selectie> <http://www.w3.org/2000/01/rdf-schema#label> "selectie" .
+# 
+# https://data.q.odis.be/archief/titel
+<https://data.q.odis.be/archief/titel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/titel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/titel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.q.odis.be/archief/titel> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/titel> <http://www.w3.org/2000/01/rdf-schema#label> "titel" .
+# 
+# https://data.q.odis.be/archief/toegang
+<https://data.q.odis.be/archief/toegang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/toegang> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/toegang> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/toegang> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/toegang> <http://www.w3.org/2000/01/rdf-schema#label> "toegang" .
+# 
+# https://data.q.odis.be/archief/url
+<https://data.q.odis.be/archief/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/OnlineToegang> .
+<https://data.q.odis.be/archief/url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.q.odis.be/archief/url> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
+# 
+# https://data.q.odis.be/archief/verwerving
+<https://data.q.odis.be/archief/verwerving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/verwerving> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwerving> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/verwerving> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwerving> <http://www.w3.org/2000/01/rdf-schema#label> "verwerving" .
+# 
+# https://data.q.odis.be/archief/verwijzing_steekkaart
+<https://data.q.odis.be/archief/verwijzing_steekkaart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/verwijzing_steekkaart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/verwijzing_steekkaart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.q.odis.be/archief/verwijzing_steekkaart> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/verwijzing_steekkaart> <http://www.w3.org/2000/01/rdf-schema#label> "verwijzing_steekkaart" .
+# 
+# https://data.q.odis.be/archief/voorwaarden_voor_raadpleging
+<https://data.q.odis.be/archief/voorwaarden_voor_raadpleging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/voorwaarden_voor_raadpleging> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/voorwaarden_voor_raadpleging> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/voorwaarden_voor_raadpleging> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/voorwaarden_voor_raadpleging> <http://www.w3.org/2000/01/rdf-schema#label> "voorwaarden_voor_raadpleging" .
+# 
+# https://data.q.odis.be/archief/voorwaarden_voor_reproductie
+<https://data.q.odis.be/archief/voorwaarden_voor_reproductie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/voorwaarden_voor_reproductie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/voorwaarden_voor_reproductie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/voorwaarden_voor_reproductie> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/voorwaarden_voor_reproductie> <http://www.w3.org/2000/01/rdf-schema#label> "voorwaarden_voor_reproductie" .
+# 
+# https://data.q.odis.be/archief/werknotities
+<https://data.q.odis.be/archief/werknotities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/werknotities> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/werknotities> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/werknotities> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/werknotities> <http://www.w3.org/2000/01/rdf-schema#label> "werknotities" .
+# 
+# https://data.q.odis.be/archief/werknotities_invoerdersgroep
+<https://data.q.odis.be/archief/werknotities_invoerdersgroep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.q.odis.be/archief/werknotities_invoerdersgroep> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.q.odis.be/archief/Archief> .
+<https://data.q.odis.be/archief/werknotities_invoerdersgroep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.q.odis.be/archief/werknotities_invoerdersgroep> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/werknotities_invoerdersgroep> <http://www.w3.org/2000/01/rdf-schema#label> "werknotities_invoerdersgroep" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://data.q.odis.be/archief/Archief
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <odsc:Entiteit> .
+<odsc:Entiteit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/archiefcode> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/archiefvormer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/auteurs> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/beschrijvingsniveau> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/externe_catalogi> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/geografische_trefwoorden> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/illustratie> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/online_bijlagen> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/online_toegang> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/parent> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/taal_en_schrift> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/trefwoorden> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwante_archieven> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwante_families> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwante_gebeurtenissen> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwante_gebouwen> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwante_organisaties> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwante_personen> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwante_publicaties> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/archiefcode> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/archiefvormer> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/beschrijvingsniveau> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/parent> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/aanvullingen> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bereik_en_inhoud> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/beschrijvingsbeheer> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bronnen> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/controle> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/datering> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/datering_systematisch> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/geschiedenis_van_het_archief> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/intermediair> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/odiscode> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/omvang_en_medium> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/opmerkingen> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/ordening> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/selectie> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/titel> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/toegang> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwerving> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwijzing_steekkaart> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/voorwaarden_voor_raadpleging> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/voorwaarden_voor_reproductie> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/werknotities> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/werknotities_invoerdersgroep> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/aanvullingen> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bereik_en_inhoud> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/beschrijvingsbeheer> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bestaan_en_bewaarplaats_kopieën> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bestaan_en_bewaarplaats_originelen> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bronnen> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/datering> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/fysieke_kenmerken_en_technische_vereisten> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/geschiedenis_van_het_archief> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/intermediair> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/odiscode> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/omvang_en_medium> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/ordening> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/selectie> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/titel> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/toegang> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwerving> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/verwijzing_steekkaart> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/voorwaarden_voor_raadpleging> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/voorwaarden_voor_reproductie> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/werknotities> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/werknotities_invoerdersgroep> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/Archief> <http://www.w3.org/2000/01/rdf-schema#label> "Archief" .
+# 
+# https://data.q.odis.be/archief/Archiefcode
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <odsc:Entiteit> .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bewaarplaatsnaam> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/landcode> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bewaarplaatsnaam> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/landcode> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/lokale_referentie> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/lokale_referentie> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/Archiefcode> <http://www.w3.org/2000/01/rdf-schema#label> "Archiefcode" .
+# 
+# https://data.q.odis.be/archief/Archiefvormer
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <odsc:Entiteit> .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/familie> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/organisatie> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/persoon> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/familie> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/organisatie> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/persoon> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/Archiefvormer> <http://www.w3.org/2000/01/rdf-schema#label> "Archiefvormer" .
+# 
+# https://data.q.odis.be/archief/Bewaarplaats
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <odsc:Entiteit> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bewaarplaats> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bewaarplaats> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/beginjaar> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bezit> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/eindjaar> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/fysieke_kentrekken> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/opmerking> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/raadpleegbaarheid> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/beginjaar> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid93 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/bezit> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/eindjaar> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
+_:genid95 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/fysieke_kentrekken> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
+_:genid96 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/informatie_over_kopieën_of_originelen> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
+_:genid97 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/opmerking> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/raadpleegbaarheid> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/Bewaarplaats> <http://www.w3.org/2000/01/rdf-schema#label> "Bewaarplaats" .
+# 
+# https://data.q.odis.be/archief/OnlineToegang
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <odsc:Entiteit> .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+_:genid99 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/beschrijving> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/opmerking> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/url> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/beschrijving> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/opmerking> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+_:genid104 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/url> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/OnlineToegang> <http://www.w3.org/2000/01/rdf-schema#label> "OnlineToegang" .
+# 
+# https://data.q.odis.be/archief/TaalEnSchrift
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <odsc:Entiteit> .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid105 .
+_:genid105 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/taal> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid106 .
+_:genid106 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid106 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/taal> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
+_:genid107 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/datering> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+_:genid108 <http://www.w3.org/2002/07/owl#minCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/opmerking> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+_:genid109 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/datering> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://data.q.odis.be/archief/opmerking> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+<https://data.q.odis.be/archief/TaalEnSchrift> <http://www.w3.org/2000/01/rdf-schema#label> "TaalEnSchrift" .
+# 
+# odbp:Bewaarplaats
+# 
+# odsc:Auteur
+# 
+# odsc:Beschrijvingsniveau
+# 
+# odsc:Entiteit
+# 
+# odsc:ExterneCatalogus
+# 
+# odsc:GeografischeTrefwoord
+# 
+# odsc:Illustratie
+# 
+# odsc:Landcode
+# 
+# odsc:OnlineBijlage
+# 
+# odsc:Taalcode
+# 
+# odsc:Trefwoord
+# 
+# odsc:VerwanteArchief
+# 
+# odsc:VerwanteFamilie
+# 
+# odsc:VerwanteGebeurtenis
+# 
+# odsc:VerwanteGebouw
+# 
+# odsc:VerwanteOrganisatie
+# 
+# odsc:VerwantePersoon
+# 
+# odsc:VerwantePublicatie
+# 
+# odsf:Familie
+# 
+# odso:Organisatie
+# 
+# odsp:Persoon
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
