@@ -3,9 +3,13 @@ $LOAD_PATH << '.'
 Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
 
+require 'active_support/all'
 require 'solis'
 require 'rack/cors'
+require 'rack/contrib'
 require 'app/controllers/main_controller'
+
+use Rack::JSONBodyParser
 
 raise 'Please set SERVICE_ROLE environment parameter' unless ENV.include?('SERVICE_ROLE')
 $SERVICE_ROLE=ENV['SERVICE_ROLE'].downcase.to_sym

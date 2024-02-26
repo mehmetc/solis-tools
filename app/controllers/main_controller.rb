@@ -43,7 +43,13 @@ class MainController < GenericController
     timing_start = Time.now
     content_type env['HTTP_ACCEPT'] || 'text/turtle'
     result = ''
-    data = request.body.read
+
+    if params.key?('query')
+      query = params['query']
+      data = "query=#{query}"
+    else
+      data = request.body.read
+    end
 
     halt 501, api_error('501', request.url, 'SparQL error', 'INSERT, UPDATE, DELETE not allowed') unless data.match(/clear|drop|insert|update|delete/i).nil?
     data = URI.decode_www_form(data).to_h
