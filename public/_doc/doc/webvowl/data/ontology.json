@@ -3,19 +3,19 @@
   "header" : {
     "languages" : [ "undefined" ],
     "title" : {
-      "undefined" : "ODIS Organisaties ontology"
+      "undefined" : "ODIS Algemeen ontology"
     },
-    "iri" : "https://data.q.odis.be/archief/",
-    "version" : "0.1",
+    "iri" : "https://odis.q.libis.be/",
+    "version" : "0.3",
     "author" : [ "KADOC" ],
     "description" : {
-      "undefined" : "ODIS Organisaties ontology"
+      "undefined" : "ODIS Algemeen ontology"
     },
     "other" : {
       "date" : [ {
         "identifier" : "date",
         "language" : "undefined",
-        "value" : "2023-05-31 13:55:20 +0200",
+        "value" : "2024-06-14 11:45:48 +0200",
         "type" : "label"
       } ],
       "creator" : [ {
@@ -27,90 +27,601 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "0.1",
+        "value" : "0.3",
         "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "undefined",
-        "value" : "ODIS Organisaties ontology",
+        "value" : "ODIS Algemeen ontology",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "5",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
+    "id" : "0",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://data.q.odis.be/archief/Bewaarplaats",
-    "baseIri" : "https://data.q.odis.be/archief",
+    "iri" : "https://odis.q.libis.be/DateringSystematisch",
+    "baseIri" : "https://odis.q.libis.be",
     "instances" : 0,
-    "id" : "5"
+    "id" : "0"
   }, {
-    "iri" : "https://data.q.odis.be/archief/Archief",
-    "baseIri" : "https://data.q.odis.be/archief",
-    "instances" : 0,
-    "id" : "1"
-  }, {
-    "iri" : "https://data.q.odis.be/archief/TaalEnSchrift",
-    "baseIri" : "https://data.q.odis.be/archief",
-    "instances" : 0,
-    "id" : "7"
-  }, {
-    "iri" : "https://data.q.odis.be/archief/Archiefcode",
-    "baseIri" : "https://data.q.odis.be/archief",
+    "iri" : "https://odis.q.libis.be/GeografischeTrefwoord",
+    "baseIri" : "https://odis.q.libis.be",
     "instances" : 0,
     "id" : "2"
   }, {
-    "iri" : "https://data.q.odis.be/archief/OnlineToegang",
-    "baseIri" : "https://data.q.odis.be/archief",
+    "iri" : "https://odis.q.libis.be/PublicatieAgent",
+    "baseIri" : "https://odis.q.libis.be",
     "instances" : 0,
+    "id" : "7"
+  }, {
+    "iri" : "https://odis.q.libis.be/Onderwijsinstelling",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://odis.q.libis.be/Diploma",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "11"
+  }, {
+    "iri" : "https://odis.q.libis.be/Oplage",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "12"
+  }, {
+    "iri" : "https://odis.q.libis.be/Context",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "13"
+  }, {
+    "iri" : "https://odis.q.libis.be/ExterneCatalogus",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "5"
+  }, {
+    "iri" : "https://odis.q.libis.be/GebouwEvaluatie",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "15"
+  }, {
+    "iri" : "https://odis.q.libis.be/TypeBewaarplaats",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "29"
+  }, {
+    "iri" : "https://odis.q.libis.be/OnlineBijlage",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "31"
+  }, {
+    "iri" : "https://odis.q.libis.be/Kerktype",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "35"
+  }, {
+    "iri" : "https://odis.q.libis.be/Bewaarplaats",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "26",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://odis.q.libis.be/ParallelId",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "38"
+  }, {
+    "iri" : "https://odis.q.libis.be/Relatie",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "39"
+  }, {
+    "iri" : "https://odis.q.libis.be/TypeGebouwtype",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "40"
+  }, {
+    "iri" : "https://odis.q.libis.be/PublicatieEnZoekinstrument",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "27"
+  }, {
+    "iri" : "https://odis.q.libis.be/Agent",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "subClasses" : [ "17", "45", "9", "26" ],
     "id" : "4"
   }, {
-    "iri" : "https://data.q.odis.be/archief/Archiefvormer",
-    "baseIri" : "https://data.q.odis.be/archief",
+    "iri" : "https://odis.q.libis.be/Organisatie",
+    "baseIri" : "https://odis.q.libis.be",
     "instances" : 0,
-    "id" : "8"
+    "subClasses" : [ "8" ],
+    "id" : "9",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://odis.q.libis.be/Geslacht",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "48"
+  }, {
+    "iri" : "https://odis.q.libis.be/BeroepTitel",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "22"
+  }, {
+    "iri" : "https://odis.q.libis.be/Taal",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "49"
+  }, {
+    "iri" : "https://odis.q.libis.be/Beschrijvingsniveau",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "50"
+  }, {
+    "iri" : "https://odis.q.libis.be/Landcode",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "53"
+  }, {
+    "iri" : "https://odis.q.libis.be/Beschermingsstatus",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "55"
+  }, {
+    "iri" : "https://odis.q.libis.be/TypeGebeurtenis",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "56"
+  }, {
+    "iri" : "https://odis.q.libis.be/Archief",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "17",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://odis.q.libis.be/Verwantschap",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "24"
+  }, {
+    "iri" : "https://odis.q.libis.be/OnlineToegang",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "18"
+  }, {
+    "iri" : "https://odis.q.libis.be/Beroep",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2000/10/swap/time#DateTimeInterval",
+    "baseIri" : "http://www.w3.org/2000/10/swap/time",
+    "instances" : 0,
+    "id" : "70"
+  }, {
+    "iri" : "https://odis.q.libis.be/Naamsoort",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "73"
+  }, {
+    "iri" : "https://odis.q.libis.be/Publicatie",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "45",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://odis.q.libis.be/Trefwoord",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "42"
+  }, {
+    "iri" : "https://odis.q.libis.be/ToegevoegdePolitiekeFunctie",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "65"
+  }, {
+    "iri" : "https://odis.q.libis.be/TypeGebouw",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "76"
+  }, {
+    "iri" : "https://odis.q.libis.be/TypeJuridischeVorm",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "77"
+  }, {
+    "iri" : "https://odis.q.libis.be/FamilieFunctie",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "82"
+  }, {
+    "iri" : "https://odis.q.libis.be/Ereteken",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "85"
+  }, {
+    "iri" : "https://odis.q.libis.be/Gebruikersgroep",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "89"
+  }, {
+    "iri" : "https://odis.q.libis.be/Zetel",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "33"
+  }, {
+    "iri" : "https://odis.q.libis.be/PolitiekeMandaat",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "66"
+  }, {
+    "iri" : "https://odis.q.libis.be/ArchiefBewaarplaats",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "94"
+  }, {
+    "iri" : "https://odis.q.libis.be/Familie",
+    "baseIri" : "https://odis.q.libis.be",
+    "instances" : 0,
+    "id" : "87"
   } ],
   "property" : [ {
-    "id" : "0",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "3",
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://data.q.odis.be/archief/archiefcode",
-    "baseIri" : "https://data.q.odis.be/archief",
-    "range" : "2",
-    "maxCardinality" : "1",
-    "minCardinality" : "1",
-    "domain" : "1",
-    "attributes" : [ "object" ],
-    "id" : "0"
-  }, {
-    "iri" : "https://data.q.odis.be/archief/online_toegang",
-    "baseIri" : "https://data.q.odis.be/archief",
-    "range" : "4",
-    "domain" : "1",
+    "iri" : "https://odis.q.libis.be/externe_catalogi",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "5",
+    "domain" : "4",
     "attributes" : [ "object" ],
     "id" : "3"
+  }, {
+    "iri" : "https://odis.q.libis.be/online_toegang",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://odis.q.libis.be/geografische_trefwoorden",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://odis.q.libis.be/beroep",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "22",
+    "maxCardinality" : "1",
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://odis.q.libis.be/verwantschap",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "24",
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://odis.q.libis.be/publicaties_en_zoekinstrumenten_syst",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://odis.q.libis.be/zetels",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "33",
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://odis.q.libis.be/type_bewaarplaats",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "29",
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://odis.q.libis.be/trefwoord",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "42",
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://odis.q.libis.be/gerelateerde_agent",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "4",
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://odis.q.libis.be/relatie",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "39",
+    "maxCardinality" : "1",
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://odis.q.libis.be/werkplaats",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "9",
+    "maxCardinality" : "1",
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://odis.q.libis.be/publicatie_auteur_corporatief",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "7",
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://odis.q.libis.be/publicatie",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "45",
+    "maxCardinality" : "1",
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://odis.q.libis.be/gelinkt_mandaat",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "66",
+    "maxCardinality" : "1",
+    "domain" : "65",
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://odis.q.libis.be/soort_relatie",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "39",
+    "maxCardinality" : "1",
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://odis.q.libis.be/online_bijlagen",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "31",
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://odis.q.libis.be/beschrijvingsniveau",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "50",
+    "maxCardinality" : "1",
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://odis.q.libis.be/diploma_uitrijkende_instelling",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "8",
+    "maxCardinality" : "1",
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://odis.q.libis.be/functies_beroepen_activiteiten",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "82",
+    "domain" : "87",
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://odis.q.libis.be/publicatie_auteur",
+    "baseIri" : "https://odis.q.libis.be",
+    "range" : "7",
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "91"
   } ]
 }
