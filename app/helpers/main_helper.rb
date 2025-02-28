@@ -1,6 +1,7 @@
 require 'json'
 require 'jwt'
 require 'stopwords'
+require 'lib/plantuml'
 require 'solis/store/sparql/client'
 
 def solis_conf
@@ -10,34 +11,34 @@ end
 
 module Sinatra
   module MainHelper
-    def endpoints(base_path=solis_conf[:base_path])
-      settings.solis.list_shapes.map {|m| "#{base_path}#{m.tableize}"}.sort
+    def endpoints(base_path = solis_conf[:base_path])
+      settings.solis.list_shapes.map { |m| "#{base_path}#{m.tableize}" }.sort
     end
 
-    def api_error(status, source, title="Unknown error", detail="", e = nil)
+    def api_error(status, source, title = "Unknown error", detail = "", e = nil)
       content_type :json
 
       puts e.backtrace.join("\n") unless e.nil?
 
-      message = {"errors": [{
-                    "status": status,
-                    "source": {"pointer":  source},
-                    "title": title,
-                    "detail": detail
-                  }]}.to_json
+      message = { "errors": [{
+                               "status": status,
+                               "source": { "pointer": source },
+                               "title": title,
+                               "detail": detail
+                             }] }.to_json
     end
 
     def for_resource
       entity = params[:entity]
       halt 404, api_error('404', request.url, "Not found", "Available endpoints: #{endpoints.join(', ')}") if endpoints.grep(/#{entity}/).empty?
-      klass="#{entity.singularize.classify}"
+      klass = "#{entity.singularize.classify}"
       settings.solis.shape_as_resource(klass)
     end
 
     def for_model
       entity = params[:entity]
       halt 404, api_error('404', request.url, "Not found", "Available endpoints: #{endpoints.join(', ')}") if endpoints.grep(/#{entity}/).empty?
-      klass="#{entity.singularize.classify}"
+      klass = "#{entity.singularize.classify}"
       settings.solis.shape_as_model(klass)
     end
 
@@ -57,8 +58,8 @@ module Sinatra
       if request.has_header?('HTTP_X_FRONTEND')
         data = request.get_header('HTTP_X_FRONTEND')
         halt 500, api_error('400', request.url, 'Error parsing header X-Frontend', 'Error parsing header X-Frontend') if data.nil? || data.empty?
-        data = data.split(';').map{|m| m.split('=')}
-        data = data.map{|m| m.length == 1 ? m << '' : m}
+        data = data.split(';').map { |m| m.split('=') }
+        data = data.map { |m| m.length == 1 ? m << '' : m }
 
         data = data&.to_h
 
@@ -67,7 +68,7 @@ module Sinatra
         id = data.key?('id') ? data['id'] : '0'
         group = data.key?('group') ? data['group'] : '0'
 
-        other_data = data.select{|k,v| !['id','group'].include?(k) }
+        other_data = data.select { |k, v| !['id', 'group'].include?(k) }
       elsif !decoded_jwt.empty?
         data = decoded_jwt
         id = data['user'] || 'unknown'
@@ -86,17 +87,17 @@ module Sinatra
       parsed_path = CGI.parse(URI(path).query || '')
 
       token = if parsed_path.key?('apikey')
-                  parsed_path['apikey'].first
+                parsed_path['apikey'].first
               elsif params.key?('apikey')
                 params['apikey']
               else
                 request.env['HTTP_AUTHORIZATION']&.gsub(/^bearer /i, '') || nil
               end
 
-      #token = parsed_path.key?('apikey') ? parsed_path['apikey'].first : request.env['HTTP_AUTHORIZATION']&.gsub(/^bearer /i, '') || nil
+      # token = parsed_path.key?('apikey') ? parsed_path['apikey'].first : request.env['HTTP_AUTHORIZATION']&.gsub(/^bearer /i, '') || nil
 
       if token && !token.blank? && !token.empty?
-        JWT.decode(token, Solis::ConfigFile[:secret], true, {algorithm: 'HS512'}).first
+        JWT.decode(token, Solis::ConfigFile[:secret], true, { algorithm: 'HS512' }).first
       else
         {}
       end
@@ -106,9 +107,9 @@ module Sinatra
     end
 
     def dump_by_content_type(resource, content_type)
-      #raise "Content-Type: #{content_type} not found use one of\n #{RDF::Format.content_types.keys.join(', ')}" unless RDF::Format.content_types.key?(content_type)
-      content_type_format = RDF::Format.for(:content_type   => content_type).to_sym
-      #raise "No writer found for #{content_type}" if  RDF::Writer.for(content_type_format).nil?
+      # raise "Content-Type: #{content_type} not found use one of\n #{RDF::Format.content_types.keys.join(', ')}" unless RDF::Format.content_types.key?(content_type)
+      content_type_format = RDF::Format.for(:content_type => content_type).to_sym
+      # raise "No writer found for #{content_type}" if  RDF::Writer.for(content_type_format).nil?
       dump(resource, content_type_format)
     rescue StandardError => e
       dump(resource, :jsonapi)
@@ -129,6 +130,19 @@ module Sinatra
 
     def formats
       (['application/vnd.api+json', 'application/json'] | RDF::Format.content_types.keys)
+    end
+
+    def build_model_by_sheet_id(job_id, key, sheet_id, sheet_name, from_cache = false)
+      s = Solis::Shape::Reader::Sheet.read(key, sheet_id, from_cache: from_cache, progress: {job_id: job_id, store: settings.progress_store})
+
+      File.open("./config/solis/#{sheet_name}_shacl.ttl", 'wb') { |f| f.puts s[:shacl] }
+      File.open("./config/solis/#{sheet_name}.json", 'wb') { |f| f.puts s[:inflections] }
+      File.open("./config/solis/#{sheet_name}_schema.ttl", 'wb') { |f| f.puts s[:schema] }
+      File.open("./config/solis/#{sheet_name}.puml", 'wb') { |f| f.puts s[:plantuml] }
+      File.open("./config/solis/#{sheet_name}.url", 'wb') { |f| f.puts PlantUML.url_for_uml(s[:plantuml]).gsub('!pragma layout elk','').gsub("\n",'') }
+      settings.progress_store[job_id] = 100
+    rescue StandardError => e
+      raise "ERROR: #{e.message}"
     end
   end
   helpers MainHelper
