@@ -13,6 +13,13 @@ class MainController < GenericController
     formats.to_json
   end
 
+  get '/_help/?' do
+    content_type :html
+    redirect "#{Solis::ConfigFile[:services][$SERVICE_ROLE][:base_path]}_help/index.html"
+  rescue StandardError => e
+    halt 500, api_error('500', request.url, 'Unknown Error', e.message, e)
+  end
+
   get '/_vandal/?' do
     content_type :html
     erb :'vandal/index.html', locals: { base_path: "#{Solis::ConfigFile[:services][$SERVICE_ROLE][:base_path]}", vandal_path: "#{Solis::ConfigFile[:services][$SERVICE_ROLE][:base_path]}_vandal/" }
@@ -93,9 +100,9 @@ class MainController < GenericController
     prefix = params[:prefix] || solis_conf[:graph_prefix]
 
       begin
-        raise "Please generate model first" unless File.exist?("./config/solis/#{prefix}.puml")
-        puml = File.read("./config/solis/#{prefix}.puml").gsub('!pragma layout elk','')
-        File.open("./config/solis/#{prefix}.url", 'wb') { |f| f.puts PlantUML.url_for_uml(puml) }
+        raise "Please generate model first" unless File.exist?("#{Solis::ConfigFile.path}/solis/#{prefix}.puml")
+        puml = File.read("#{Solis::ConfigFile.path}/solis/#{prefix}.puml").gsub('!pragma layout elk','')
+        File.open("#{Solis::ConfigFile.path}/solis/#{prefix}.url", 'wb') { |f| f.puts PlantUML.url_for_uml(puml) }
       rescue StandardError => e
         puts e.message
         raise "Error loading model"
@@ -103,19 +110,19 @@ class MainController < GenericController
 
     case @media_type
     when 'application/shacl'
-      File.read("./config/solis/#{prefix}_shacl.ttl")
+      File.read("#{Solis::ConfigFile.path}/solis/#{prefix}_shacl.ttl")
     when "application/owl"
       content_type "application/owl+xml"
-      File.read("./config/solis/#{prefix}_schema.ttl")
+      File.read("#{Solis::ConfigFile.path}/solis/#{prefix}_schema.ttl")
     when "application/puml"
-      File.read("./config/solis/#{prefix}.puml")
+      File.read("#{Solis::ConfigFile.path}/solis/#{prefix}.puml")
     when "image/svg"
       content_type "image/svg+xml"
-      File.read("./config/solis/#{prefix}.svg")
+      File.read("#{Solis::ConfigFile.path}/solis/#{prefix}.svg")
     when "image/png"
-      File.read("./config/solis/#{prefix}.png")
+      File.read("#{Solis::ConfigFile.path}/solis/#{prefix}.png")
     else
-      redirect_url = File.read("./config/solis/#{prefix}.url").gsub(/[\000-\037]/, '')
+      redirect_url = File.read("#{Solis::ConfigFile.path}/solis/#{prefix}.url").gsub(/[\000-\037]/, '')
       redirect redirect_url
     end
   rescue StandardError => e
@@ -164,7 +171,4 @@ class MainController < GenericController
     headers 'X-TIMING' => (((Time.now - timing_start) * 1000).to_i).to_s
   end
 
-  get '/_help' do
-
-  end
 end

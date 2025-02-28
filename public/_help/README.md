@@ -1,50 +1,66 @@
-# SOLIS
+# SOLIS cheatsheet
 ## Token
 
 ## Endpoints 
-```http request
+#### JSON:API client.
+```HTTP
 GET https://base_url/_vandal
+Content-Type: text/html
 ```
-JSON:API client. 
-```http request
+
+#### JSON:API representation of the model
+```HTTP
 GET https://base_url/schema.json
+Content-Type: application/json
 ```
-JSON:API representation of the model
-```http request
+
+#### Documentation URL
+```HTTP
 GET https://base_url/_doc
+Content-Type: text/html
 ```
-Documentation URL
-```http request
+
+#### This page
+```HTTP
 GET https://base_url/_help
+Content-Type: text/html
 ```
-This page
-```http request
+
+#### SPARQL client
+```HTTP
 GET https://base_url/_yas
+Content-Type: text/html
 ```
-SPARQL client
-```http request
+
+#### Possible available record formats
+```HTTP
 GET https://base_url/_formats
 ```
-Possible available record formats
-```http request
+
+#### SPAQL endpoint
+```HTTP
 POST https://base_url/_sparql
 ```
-SPAQL endpoint
-```http request
+
+#### Model diagram
+If no ```Content-Type``` is given then you will be redirected to a PlantUML service to render the puml data.
+```HTTP
 GET https://base_url/_model
+Content-Type: image/png, image/svg, application/puml, application/shacl, application/owl
+
 ```
 ## CRUD operations
 ### READ data
-```http request
+```HTTP
 GET https://base_url/
 ```
 Get a list of available entities
-```http request
+```HTTP
 GET https://base_url/entity
 ```
 READ all record for entity. Use Vandal to create complex queries
 ### CREATE data
-```http request
+```HTTP
 POST https://base_url/entity
 Content-Type: application/json
 
@@ -56,7 +72,7 @@ Content-Type: application/json
 }
 ```
 ### UPDATE data
-```http request
+```HTTP
 PUT https://base_url/entity/id_of_entity
 Content-Type: application/json
 
@@ -66,7 +82,7 @@ Content-Type: application/json
 ```
 
 ### DELETE data
-```http request
+```HTTP
 DELETE https://base_url/entity/id_of_entity
 ```
 
