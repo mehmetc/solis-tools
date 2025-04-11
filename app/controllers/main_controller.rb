@@ -53,7 +53,7 @@ class MainController < GenericController
 
     if params.key?('query')
       query = params['query']
-      data = "query=#{query}"
+      data = "query=#{URI.encode_uri_component(query)}"
     else
       data = request.body.read
     end
