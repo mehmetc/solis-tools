@@ -139,6 +139,7 @@ module Sinatra
       File.open("./config/solis/#{sheet_name}.json", 'wb') { |f| f.puts s[:inflections] }
       File.open("./config/solis/#{sheet_name}_schema.ttl", 'wb') { |f| f.puts s[:schema] }
       File.open("./config/solis/#{sheet_name}.puml", 'wb') { |f| f.puts s[:plantuml] }
+      File.open("./config/solis/#{sheet_name}_schema.json", 'wb') { |f| f.puts s[:json_schema] }
       File.open("./config/solis/#{sheet_name}.url", 'wb') { |f| f.puts PlantUML.url_for_uml(s[:plantuml]).gsub('!pragma layout elk','').gsub("\n",'') }
       settings.progress_store[job_id] = 100
     rescue StandardError => e
