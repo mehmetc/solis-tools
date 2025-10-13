@@ -97,7 +97,7 @@ class MainController < GenericController
     timing_start = Time.now
     content_type @media_type
 
-    prefix = params[:prefix] || solis_conf[:graph_prefix]
+    prefix = params[:prefix] || solis_conf[:graphs].select{|s| s['type'].eql?(:main)}.first['prefix'] rescue 'solis'
 
       begin
         raise "Please generate model first" unless File.exist?("#{Solis::ConfigFile.path}/solis/#{prefix}.puml")
@@ -149,7 +149,7 @@ class MainController < GenericController
 
     timing_start = Time.now
 
-    prefix = params[:prefix] || solis_conf[:graph_prefix].to_sym
+    prefix = params[:prefix] || solis_conf[:graphs].select{|s| s['type'].eql?(:main)}.first['prefix'] rescue 'solis'
     sheet_id = params[:sheet] || Solis::ConfigFile[:sheets][prefix.to_sym]
     google_key = params[:key] || Solis::ConfigFile[:key] || nil
 
